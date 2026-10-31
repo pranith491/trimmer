@@ -1,0 +1,5 @@
+Frontend deployment:
+1. Deploy the frontend folder to Vercel as a static site.
+2. Before deployment, edit js/config.js and replace http://localhost:8080 with your Render backend URL, e.g. https://YOUR-SERVICE.onrender.com (no trailing slash).
+3. In Render backend Environment Variables, set APP_FRONTEND_ORIGIN to your Vercel origin if your build uses that property. Example: https://your-frontend.vercel.app
+4. Test https://YOUR-SERVICE.onrender.com/api/health.
